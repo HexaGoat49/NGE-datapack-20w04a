@@ -1,0 +1,5 @@
+Credits:
+
+Datapack made by HexaGoat49
+Neon Genesis Evangelion produced by Gainax and directed by Hideaki Anno
+Right and left click interaction made by Cloud Wolf: https://www.youtube.com/watch?v=i65JGGVd8WA
