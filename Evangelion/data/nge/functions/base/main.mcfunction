@@ -1,4 +1,4 @@
-execute at @s as @e[tag=evaPart,tag=!main] if score @s id = @e[tag=main,limit=1,sort=nearest] id run function nge:base/positioning/set_pos
+execute at @s as @e[tag=evaPart] if score @s id = @e[tag=main,limit=1,sort=nearest] id run tp @s[tag=!main] ~ ~ ~
 execute at @s as @e[tag=offset] if score @s id = @e[tag=main,limit=1,sort=nearest] id run function nge:base/positioning/set_y
 
 execute store result score @s m1 run data get entity @s Motion[1] 10000
@@ -18,3 +18,5 @@ tag @a remove rotate
 execute at @a[predicate=nge:has_motion] as @s[tag=!jumping] if score @s id = @p id run tag @p add rotate
 
 fill ~9 ~-1 ~9 ~-9 ~-3 ~-9 dirt replace farmland
+
+
