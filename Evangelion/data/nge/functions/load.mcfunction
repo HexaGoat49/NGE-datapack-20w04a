@@ -9,8 +9,6 @@ scoreboard objectives add m1 dummy
 scoreboard objectives add m2 dummy
 scoreboard objectives add water dummy
 scoreboard objectives add id dummy
-scoreboard objectives add offset dummy
-scoreboard objectives add yPos dummy
 
 scoreboard players set idStack id 0
 execute as @e[scores={id=1..},tag=main] store result score idStack id run scoreboard players get @s id

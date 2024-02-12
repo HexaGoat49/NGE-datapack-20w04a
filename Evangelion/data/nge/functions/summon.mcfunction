@@ -1,10 +1,14 @@
 summon minecraft:giant ~ ~ ~ {Silent:1b,PersistenceRequired:1b,Tags:["main","evaPart","new"]}
-summon minecraft:giant ~ ~ ~ {Silent:1b,PersistenceRequired:1b,Tags:["chair","evaPart","new","offset"]}
-summon interaction ~ ~ ~ {width:4.0f,height:10.0f,Tags:["clicker","evaPart","new","offset"]}
-summon armor_stand ~ ~ ~ {Tags:["chairModel","evaPart","new","model","offset"]}
-summon item_display ~ ~ ~ {Tags:["interiorDisplay","evaPart","new","display"]}
-summon item_display ~ ~ ~ {Tags:["chairDisplay","evaPart","new","display"]}
-summon item_display ~ ~ ~ {Tags:["chestDisplay","evaPart","new","display"]}
+summon minecraft:giant ~ ~ ~ {Silent:1b,PersistenceRequired:1b,Tags:["chair","evaPart","new"]}
+summon interaction ~ ~ ~ {width:4.0f,height:10.0f,Tags:["clicker","evaPart","new"]}
+
+summon armor_stand ~ ~ ~ {Tags:["chairModel","evaPart","new"]}
+summon item_display ~ ~ ~ {Tags:["interiorDisplay","evaPart","new"]}
+summon item_display ~ ~ ~ {Tags:["chairDisplay","evaPart","new"]}
+summon item_display ~ ~ ~ {Tags:["chestDisplay","evaPart","new"]}
+summon item_display ~ ~ ~ {Tags:["torsoDisplay","evaPart","new"]}
+summon item_display ~ ~ ~ {Tags:["leftArmDisplay","evaPart","new"]}
+summon item_display ~ ~ ~ {Tags:["rightArmDisplay","evaPart","new"]}
 
 scoreboard players set @e[tag=new] id 0
 scoreboard players add idStack id 1
@@ -26,17 +30,26 @@ data merge entity @e[limit=1,sort=nearest,tag=new,tag=interiorDisplay] {transfor
 data merge entity @e[limit=1,sort=nearest,tag=new,tag=chestDisplay] {item:{id:"name_tag",Count:1b,tag:{CustomModelData:420002}},height:15,width:15}
 data merge entity @e[limit=1,sort=nearest,tag=new,tag=chestDisplay] {transformation:{translation:[0.0f,3.0f,-2.2f],scale:[10.0f,10.0f,10.0f]}}
 
+data merge entity @e[limit=1,sort=nearest,tag=new,tag=torsoDisplay] {item:{id:"name_tag",Count:1b,tag:{CustomModelData:420003}},height:15,width:15}
+data merge entity @e[limit=1,sort=nearest,tag=new,tag=torsoDisplay] {transformation:{translation:[0.0f,-8.3f,1.8f],scale:[5.0f,5.0f,5.0f]},Rotation:[0.0f,22.5f]}
+
+data merge entity @e[limit=1,sort=nearest,tag=new,tag=leftArmDisplay] {item:{id:"name_tag",Count:1b,tag:{CustomModelData:420004}},height:15,width:15}
+data merge entity @e[limit=1,sort=nearest,tag=new,tag=leftArmDisplay] {transformation:{translation:[10.0f,-2.2f,-1.8f],scale:[5.0f,5.0f,5.0f]}}
+
+data merge entity @e[limit=1,sort=nearest,tag=new,tag=rightArmDisplay] {item:{id:"name_tag",Count:1b,tag:{CustomModelData:420005}},height:15,width:15}
+data merge entity @e[limit=1,sort=nearest,tag=new,tag=rightArmDisplay] {transformation:{translation:[-10.0f,-2.2f,-1.8f],scale:[5.0f,5.0f,5.0f]}}
+
 ride @e[tag=new,tag=chairDisplay,limit=1,sort=nearest] mount @e[tag=new,tag=chairModel,limit=1,sort=nearest]
 ride @e[tag=new,tag=interiorDisplay,limit=1,sort=nearest] mount @e[tag=new,tag=chairDisplay,limit=1,sort=nearest]
 ride @e[tag=new,tag=chestDisplay,limit=1,sort=nearest] mount @e[tag=new,tag=interiorDisplay,limit=1,sort=nearest]
+ride @e[tag=new,tag=torsoDisplay,limit=1,sort=nearest] mount @e[tag=new,tag=chestDisplay,limit=1,sort=nearest]
+
+ride @e[tag=new,tag=leftArmDisplay,limit=1,sort=nearest] mount @e[tag=new,tag=torsoDisplay,limit=1,sort=nearest]
+ride @e[tag=new,tag=rightArmDisplay,limit=1,sort=nearest] mount @e[tag=new,tag=torsoDisplay,limit=1,sort=nearest]
 
 attribute @e[tag=main,limit=1,sort=nearest,tag=new] generic.scale base set 4.5
 attribute @e[tag=main,limit=1,sort=nearest,tag=new] generic.step_height base set 8
 attribute @e[tag=chair,limit=1,sort=nearest,tag=new] generic.scale base set 0.0625
 attribute @e[tag=chair,limit=1,sort=nearest,tag=new] generic.max_health base set 1
-
-scoreboard players set @e[tag=chair,tag=new] offset 43
-scoreboard players set @e[tag=chairModel,tag=new] offset 48
-scoreboard players set @e[tag=clicker,tag=new] offset 45
 
 tag @e remove new

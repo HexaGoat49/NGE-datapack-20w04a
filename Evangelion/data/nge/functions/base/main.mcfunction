@@ -1,6 +1,3 @@
-execute at @s as @e[tag=evaPart] if score @s id = @e[tag=main,limit=1,sort=nearest] id run tp @s[tag=!main] ~ ~ ~
-execute at @s as @e[tag=offset] if score @s id = @e[tag=main,limit=1,sort=nearest] id run function nge:base/positioning/set_y
-
 execute store result score @s m1 run data get entity @s Motion[1] 10000
 function nge:base/motion with entity @s[tag=!jumping,predicate=nge:can_run]
 
@@ -16,7 +13,4 @@ scoreboard players set @s[predicate=nge:should_stop_falling] m2 0
 
 tag @a remove rotate
 execute at @a[predicate=nge:has_motion] as @s[tag=!jumping] if score @s id = @p id run tag @p add rotate
-
 fill ~9 ~-1 ~9 ~-9 ~-3 ~-9 dirt replace farmland
-
-
