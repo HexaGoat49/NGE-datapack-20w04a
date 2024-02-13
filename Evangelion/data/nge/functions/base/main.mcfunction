@@ -11,6 +11,7 @@ execute store result entity @s[tag=jumping] Motion[2] double 0.001 run scoreboar
 scoreboard players set @s[predicate=nge:should_stop_falling] m0 0
 scoreboard players set @s[predicate=nge:should_stop_falling] m2 0
 
-tag @a remove rotate
+execute at @a as @s if score @s id = @p id run tag @p remove rotate
 execute at @a[predicate=nge:has_motion] as @s[tag=!jumping] if score @s id = @p id run tag @p add rotate
+
 fill ~9 ~-1 ~9 ~-9 ~-3 ~-9 dirt replace farmland
