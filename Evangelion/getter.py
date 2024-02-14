@@ -1,18 +1,15 @@
 import math 
 
-dx = -12
-dy = -17
-dz = 15
+dx = 3
+dy = -13.25
+dz = 0
 
-l = 0
-dr0 = 0
-dr1 = 0
-
-C = 180/math.pi 
+def calc(n):
+    return round(n*180/math.pi,3)
 
 l = round(math.sqrt(dx*dx + dy*dy + dz*dz),3)
-dr0 = round(C*math.asin(dx/math.sqrt(dx*dx + dz*dz)),3)
-dr1 = round(C*math.asin(dy/l),3)
+dr0 = calc(math.asin(dx/math.sqrt(dz*dz + dx*dx)))
+dr1 = calc(math.asin(dy/(l*math.sqrt(l*l - dx*dx))))
 
 print(l)
 print(dr0, dr1)
