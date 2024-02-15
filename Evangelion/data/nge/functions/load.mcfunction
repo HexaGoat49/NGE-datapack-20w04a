@@ -14,20 +14,17 @@ scoreboard objectives add m2 dummy
 scoreboard objectives add rot0 dummy
 scoreboard objectives add rot1 dummy
 # Maths
-scoreboard objectives add angle dummy
-scoreboard objectives add out dummy
-scoreboard objectives add math dummy
-# Delta rotation and len for grandson entities
-scoreboard objectives add len dummy
-scoreboard objectives add dr0 dummy
-scoreboard objectives add dr1 dummy
-# Origin rotation
 scoreboard objectives add alpha dummy
 scoreboard objectives add beta dummy
-# Translation
-scoreboard objectives add tx dummy
-scoreboard objectives add ty dummy
-scoreboard objectives add tz dummy
+scoreboard objectives add angle dummy
+scoreboard objectives add out dummy
+scoreboard objectives add V1 dummy
+scoreboard objectives add V2 dummy
+scoreboard objectives add V3 dummy
+# Pivots
+scoreboard objectives add px dummy
+scoreboard objectives add pz dummy
+scoreboard objectives add pRot dummy
 # Deltas
 scoreboard objectives add dx dummy
 scoreboard objectives add dy dummy

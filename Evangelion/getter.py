@@ -8,8 +8,8 @@ def calc(n):
     return round(n*180/math.pi,3)
 
 l = round(math.sqrt(dx*dx + dy*dy + dz*dz),3)
-dr0 = calc(math.asin(dx/math.sqrt(dz*dz + dx*dx)))
-dr1 = calc(math.asin(dy/(l*math.sqrt(l*l - dx*dx))))
+dr0 = calc(math.acos(dy / math.sqrt(dy*dy + dz*dz)))
+dr1 = calc(math.acos(-dx / l))
 
 print(l)
 print(dr0, dr1)
