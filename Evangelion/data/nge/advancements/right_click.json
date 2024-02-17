@@ -19,6 +19,6 @@
     }
   },
   "rewards": {
-    "function": "nge:base/controls/right_click"
+    "function": "nge:core/controls/right_click"
   }
 }

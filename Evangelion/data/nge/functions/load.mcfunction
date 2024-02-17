@@ -10,7 +10,7 @@ scoreboard objectives add id dummy
 scoreboard objectives add m0 dummy
 scoreboard objectives add m1 dummy
 scoreboard objectives add m2 dummy
-# Display rotation
+# Rotation
 scoreboard objectives add rot0 dummy
 scoreboard objectives add rot1 dummy
 # Maths
@@ -18,12 +18,9 @@ scoreboard objectives add alpha dummy
 scoreboard objectives add beta dummy
 scoreboard objectives add angle dummy
 scoreboard objectives add out dummy
-scoreboard objectives add V1 dummy
-scoreboard objectives add V2 dummy
-scoreboard objectives add V3 dummy
+scoreboard objectives add var dummy
 # Pivots
-scoreboard objectives add px dummy
-scoreboard objectives add pz dummy
+scoreboard objectives add pLen dummy
 scoreboard objectives add pRot dummy
 # Deltas
 scoreboard objectives add dx dummy
@@ -32,7 +29,7 @@ scoreboard objectives add dz dummy
 # Global values
 scoreboard objectives add global dummy
 scoreboard players set G2 global 2
-scoreboard players set G1000 global 1000
+scoreboard players set G100 global 100
 
 scoreboard players set idStack id 0
 execute as @e[scores={id=1..},tag=main] store result score idStack id run scoreboard players get @s id
