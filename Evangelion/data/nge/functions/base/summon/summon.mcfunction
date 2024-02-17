@@ -5,10 +5,10 @@ summon armor_stand ~ ~ ~ {Tags:["root","evaPart","new"]}
 summon armor_stand ~ ~ ~ {Tags:["rotator","evaPart","new"]}
 summon armor_stand ~ ~ ~ {Tags:["point","evaPart","new"]}
 
-summon item_display ~ ~ ~ {Tags:["interior","evaPart","new"]}
-summon item_display ~ ~ ~ {Tags:["chair","evaPart","new"]}
-summon item_display ~ ~ ~ {Tags:["chest","evaPart","new"]}
-summon item_display ~ ~ ~ {Tags:["torso","evaPart","new"]}
+summon item_display ~ ~ ~ {Tags:["interior","evaPart","new","parent"]}
+summon item_display ~ ~ ~ {Tags:["chair","evaPart","new","parent"]}
+summon item_display ~ ~ ~ {Tags:["chest","evaPart","new","parent"]}
+summon item_display ~ ~ ~ {Tags:["torso","evaPart","new","parent"]}
 summon item_display ~ ~ ~ {Tags:["leftArm","evaPart","new","child"]}
 summon item_display ~ ~ ~ {Tags:["rightArm","evaPart","new","child"]}
 summon item_display ~ ~ ~ {Tags:["leftForearm","evaPart","new","grandson"]}

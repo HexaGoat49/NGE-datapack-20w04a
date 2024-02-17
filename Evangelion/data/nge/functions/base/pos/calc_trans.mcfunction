@@ -38,9 +38,3 @@ scoreboard players operation @s out = @s V3
 scoreboard players operation @s out *= @s V1
 scoreboard players operation @s out /= G1000 global
 scoreboard players operation @s dx -= @s out
-
-
-
-
-
-
