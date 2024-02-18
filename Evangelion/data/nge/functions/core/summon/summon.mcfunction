@@ -9,10 +9,17 @@ summon item_display ~ ~ ~ {Tags:["interior","evaPart","new"]}
 summon item_display ~ ~ ~ {Tags:["chair","evaPart","new"]}
 summon item_display ~ ~ ~ {Tags:["chest","evaPart","new"]}
 summon item_display ~ ~ ~ {Tags:["torso","evaPart","new"]}
+
 summon item_display ~ ~ ~ {Tags:["leftArm","evaPart","new"]}
 summon item_display ~ ~ ~ {Tags:["rightArm","evaPart","new"]}
 summon item_display ~ ~ ~ {Tags:["leftForearm","evaPart","new"]}
 summon item_display ~ ~ ~ {Tags:["rightForearm","evaPart","new"]}
+
+summon item_display ~ ~ ~ {Tags:["leftLeg","evaPart","new"]}
+summon item_display ~ ~ ~ {Tags:["rightLeg","evaPart","new"]}
+summon item_display ~ ~ ~ {Tags:["leftCalf","evaPart","new"]}
+summon item_display ~ ~ ~ {Tags:["rightCalf","evaPart","new"]}
+
 
 scoreboard players set @e[tag=new] id 0
 scoreboard players add idStack id 1

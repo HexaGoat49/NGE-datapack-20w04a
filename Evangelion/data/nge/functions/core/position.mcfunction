@@ -1,4 +1,4 @@
-tp @s[tag=vehicle] ~ ~43 ~
-tp @s[tag=clicker] ~ ~45 ~
-tp @s[tag=root] ~ ~48 ~
-tp @s[tag=rotator] ~ ~40 ~
+tp @s[tag=vehicle] ~ ~40 ~
+tp @s[tag=clicker] ~ ~42 ~
+tp @s[tag=root] ~ ~44.55 ~
+tp @s[tag=rotator] ~ ~37 ~
