@@ -1,0 +1,8 @@
+dx(a, b) = -sin(a)*cos(b)
+dy(a, b) = sin(b)
+dz(a, b) = cos(a)*cos(b)
+α, β, θ
+
+x/l = dx(α, θ-90) + dz(α, β) * cos(θ)
+y/l = dy(α, β) * cos(θ)
+z/l = dz(α, θ-90) - dx(α, β) * cos(θ)
