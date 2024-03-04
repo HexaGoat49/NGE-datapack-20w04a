@@ -15,6 +15,12 @@ scoreboard objectives add alpha dummy
 scoreboard objectives add beta dummy
 scoreboard objectives add fAlpha dummy
 scoreboard objectives add fBeta dummy
+# Animation
+scoreboard objectives add animAlpha dummy
+scoreboard objectives add animBeta dummy
+scoreboard objectives add deltaAlpha dummy
+scoreboard objectives add deltaBeta dummy
+scoreboard objectives add animTime dummy
 # Trigonometry
 scoreboard objectives add angle dummy
 scoreboard objectives add sin dummy
@@ -30,6 +36,7 @@ scoreboard objectives add tz dummy
 # Global values
 scoreboard objectives add global dummy
 scoreboard players set G2 global 2
+scoreboard players set G-1 global -1
 
 scoreboard players set idStack id 0
 execute as @e[scores={id=1..},tag=main] store result score idStack id run scoreboard players get @s id

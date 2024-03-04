@@ -9,8 +9,9 @@ execute on vehicle run scoreboard players operation @e[tag=this,limit=1] fAlpha 
 execute on vehicle run scoreboard players operation @e[tag=this,limit=1] fBeta = @s fBeta
 function nge:core/transform/translation
 
-scoreboard players operation @s fAlpha += @s alpha
-scoreboard players operation @s fBeta += @s beta
+function nge:core/transform/anim
+scoreboard players operation @s fAlpha += @s animAlpha
+scoreboard players operation @s fBeta += @s animBeta
 function nge:core/transform/display
 
 tag @e[tag=thisRotator] remove thisRotator

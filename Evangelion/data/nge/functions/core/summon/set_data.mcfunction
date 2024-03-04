@@ -51,3 +51,5 @@ ride @s[tag=leftFoot] mount @e[tag=new,tag=leftCalf,limit=1]
 ride @s[tag=rightFoot] mount @e[tag=new,tag=rightCalf,limit=1]
 ride @s[tag=head] mount @e[tag=new,tag=chest,limit=1]
 ride @s[tag=jaw] mount @e[tag=new,tag=head,limit=1]
+
+scoreboard players set @s animTime 1
