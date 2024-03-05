@@ -21,6 +21,7 @@ scoreboard objectives add animBeta dummy
 scoreboard objectives add deltaAlpha dummy
 scoreboard objectives add deltaBeta dummy
 scoreboard objectives add animTime dummy
+scoreboard objectives add time dummy
 # Trigonometry
 scoreboard objectives add angle dummy
 scoreboard objectives add sin dummy

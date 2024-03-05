@@ -7,8 +7,8 @@ data modify entity @s[tag=interior] item.id set value "name_tag"
 data modify entity @s[tag=chair] transformation.scale set value [2.0f,2.0f,2.0f]
 data modify entity @s[tag=interior] transformation.scale set value [4.0f,4.0f,4.0f]
 
-data modify entity @s[tag=chair] item.tag.CustomModelData set value 100
-data modify entity @s[tag=interior] item.tag.CustomModelData set value 101
+data modify entity @s[tag=interior] item.tag.CustomModelData set value 100
+data modify entity @s[tag=chair] item.tag.CustomModelData set value 101
 
 data modify entity @s[tag=chest] item.tag.CustomModelData set value 100
 data modify entity @s[tag=torso] item.tag.CustomModelData set value 101
@@ -53,3 +53,5 @@ ride @s[tag=head] mount @e[tag=new,tag=chest,limit=1]
 ride @s[tag=jaw] mount @e[tag=new,tag=head,limit=1]
 
 scoreboard players set @s animTime 1
+scoreboard players set @s time 0
+

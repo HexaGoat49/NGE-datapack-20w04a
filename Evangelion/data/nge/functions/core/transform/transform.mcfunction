@@ -7,9 +7,12 @@ execute on vehicle store result entity @e[tag=this,limit=1] Rotation[1] float 0.
 
 execute on vehicle run scoreboard players operation @e[tag=this,limit=1] fAlpha = @s fAlpha
 execute on vehicle run scoreboard players operation @e[tag=this,limit=1] fBeta = @s fBeta
+
 function nge:core/transform/translation
 
 function nge:core/transform/anim
+execute as @s[tag=head] at @a if score @s id = @p id run scoreboard players operation @s animAlpha = @p alpha
+execute as @s[tag=head] at @a if score @s id = @p id run scoreboard players operation @s animBeta = @p beta
 scoreboard players operation @s fAlpha += @s animAlpha
 scoreboard players operation @s fBeta += @s animBeta
 function nge:core/transform/display

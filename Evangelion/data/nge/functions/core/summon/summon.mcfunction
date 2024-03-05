@@ -43,4 +43,6 @@ attribute @e[tag=main,limit=1,sort=nearest,tag=new] generic.step_height base set
 attribute @e[tag=vehicle,limit=1,sort=nearest,tag=new] generic.scale base set 0.0625
 attribute @e[tag=vehicle,limit=1,sort=nearest,tag=new] generic.max_health base set 1
 
+execute as @e[tag=root,tag=new] run function nge:core/anim/neutral
+
 tag @e remove new
